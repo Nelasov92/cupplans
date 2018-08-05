@@ -1,0 +1,134 @@
+:root {
+	--font: 'misobold';
+	--text: 'Lato', sans-serif;
+}
+
+@font-face {
+    font-family: 'misobold';
+    src: url('../css/fonts/miso-bold.otf'),
+         url('../css/fonts/miso-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+body {
+	background: #191919;
+	padding: 35px;
+}
+
+.conteiner {
+	min-width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.block {
+	width: 1200px;
+	height: 600px;
+	padding: 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: #fdde7e;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.block__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.block__body--gold {
+	width: 360px;
+	border: 1px solid white;
+	border-radius: 10px;
+	background: #fff;
+	align-self: stretch;
+	order: 1;
+}
+
+
+
+
+.block__body--gold p span {
+	font: 45px var(--font);
+	color: #333333;
+	display: block;
+}
+
+.block__body--silver {
+	width: 360px;
+	height: 450px;
+	border: 1px solid white;
+	border-radius: 10px;
+	background: #fff;
+	order: 1;
+}
+
+
+.block__body--silver p span {
+	font: 45px var(--font);
+	color: #333333;
+	display: block;
+}
+
+.block__body--bronze {
+	width: 360px;
+	height: 450px;
+	border: 1px solid white;
+	border-radius: 10px;
+	background: #fff;
+}
+
+
+.block__body--bronze p span {
+	font: 45px var(--font);
+	color: #333333;
+	display: block;
+}
+
+.block__text {
+	font: 800 70px var(--font);
+	color: #02995b;
+	text-align: center;
+}
+
+.text__doune {
+	font: 300 20px var(--text);
+	text-align: center;
+}
